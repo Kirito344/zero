@@ -8,6 +8,10 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 .container {
@@ -196,6 +200,11 @@ text-align: center;
 font-weight: 800;
 margin: 0;
   }
+  @media (max-width:767px){
+    .services-logo {
+      font-size: 80px;
+    }
+  }
 
   .services-logo + p {
 text-align: center;
@@ -327,9 +336,7 @@ hr {
   color: rgb(16, 202, 183);
 }
 
-.about .container .about-content .text {
 
-}
 
 .about .container .about-content .text p:first-child {
   font-weight: bold;
@@ -373,12 +380,35 @@ padding: 16px;
   .contact .info a {
     text-decoration: none;
     font-size: 30px;
-    font-weight:bold ;
+    font-weight:bold ;}
 
-  }
+    @media(max-width:767px){
+      .contact .info .label ,   .contact .info a{
+        font-size: 20px;
 
+      }
+    }
   .soc {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .soc svg {
+    margin:  0 5px;
+  }
+
+  footer {
+    background-color: #2c4755;
+    
+  }
+  footer .container p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  footer .container p span {
+    background-color: transparent;
+    color: turquoise;
   }
